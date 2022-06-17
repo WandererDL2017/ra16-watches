@@ -1,38 +1,83 @@
+* {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
+  margin-top: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0;
+  display: block;
+  height: 100px;
+  max-width: 500px;
+  min-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form input {
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.name {
+  position: absolute;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.button {
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: rgb(48, 204, 48);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clocks-name {
+  font-weight: 700;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom:50px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.watch {
+  padding: 10px 20px;
+  position: relative;
+}
+
+.watch button {
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.watch button:hover {
+  background-color: rgb(247, 4, 4);
+  color: white;
+  border-color: white;
+  box-shadow: none;
 }
